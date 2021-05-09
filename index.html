@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ishi</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"  />
+	<link rel="stylesheet"  href="../font/css/all.css">
+	<link rel="stylesheet"href="mdb/css/bootstrap.css">
+	<link rel="stylesheet"href="mdb/css/mdb.css">
+	<style>
+		#main-header
+        {
+	       background: url('b.jpg') no-repeat scroll center;
+	       background-size: cover;
+	       color:white;
+	       padding:23px;
+	       text-align:center;
+        }
+        body
+        {
+	       margin:0px;
+	       background-image:url('pic2.gif');
+           font-family:'Arial',sans-serif;
+        }
+        h2
+		{
+			color:black;
+		}
+		p
+		{
+			color:black;
+			font-size:35px;
+		}
+		#ishi
+		{
+			position: relative;
+			background-image:url('pic6.gif');
+			width:400px;
+			height:300px;
+			margin-bottom: 200px;
+
+
+		/*Animation Properties*/
+			animation-name: move;
+            animation-duration:9s;
+            animation-timing-function: linear;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction:alternate;
+		}
+		@keyframes move
+		{
+			0%{
+				top: 0px;
+				left: 0px;
+			}
+			14%{
+				top: 200px;
+				left: 227px;
+			}
+			28%{
+				top: 0px;
+				left: 454px;
+			
+			}
+			56%{
+				top: 200px;
+				left: 681px;
+			}
+			70%{
+				top: 0px;
+				left: 908px;
+			}
+			85%{
+				top: 200px;
+				left: 1135px;
+			}		
+			100%{
+				top: 0px;
+				left: 1366px;
+			}				
+		}
+		#main-section-news
+        {
+	       width:80%;
+	       margin:auto;
+        }
+        #main-section-news .main-section-news-article
+        {
+	       border:2px solid white;
+	       box-shadow:0 0 10px white;
+	       border-radius:20px;
+	       margin:10px;
+	       overflow:hidden;
+	       text-align:center;
+        }
+        #main-section-news .main-section-news-article img
+        {
+	       width:550px;
+	       height:300px;
+	       box-shadow:0 0 10px yellow;
+	       border-radius:20px;
+	       transition:all 0.5s;
+        }
+        #main-section-news .main-section-news-article img:hover
+        {
+	       transform:scale(1.2,1.2);
+
+        }
+        #main-section-news .main-section-news-article h2
+        {
+	       background-color:navy;
+	       color:white;
+	       margin:0px;
+	       padding:10px;
+	       text-shadow:yellow;
+	    }
+        #main-section-news .main-section-news-article h2:hover
+        {  
+	       color:white;
+        }
+        #main-section-news .main-section-news-article:hover
+        {
+	       background:radial-gradient(circle,deeppink,green,white,purple);
+        }
+        .object {
+         animation: MoveLeftRight 10s linear infinite;
+         position: absolute;
+         top:3800px;
+         right: 0;
+        }
+
+        @keyframes MoveLeftRight {
+            0%, 100% {
+            right: 0;
+            }
+            50% {
+            right:950px;
+            }
+        }
+         .object1 {
+         animation: MoveRightLeft 10s linear infinite;
+         position: absolute;
+         top:3800px;
+         right:0;
+        }
+
+        @keyframes MoveRightLeft {
+            0%, 100% {
+            left: 0;
+            }
+            50% {
+            left:950px;
+            }
+        }
+         .img:hover
+        {
+       transform:scale(0.9,0.9);
+        }
+       .span
+		{
+			margin-bottom:200px;
+			position:relative;
+			left:300px;
+			top:100px;
+		}
+		span
+		{
+			padding:30px;
+			color:white;
+			margin:50px;
+			display:inline-block;
+			font-size:30px;
+			font-weight:bold;
+			box-shadow:5px -7px 10px white;
+			border-radius:10px;
+			animation:bounce 1s linear 0s infinite;
+		}
+		@keyframes bounce 
+		{
+			0% 100%
+			{
+				transform:translateY(-50px);
+			}
+			50%
+			{
+				transform:translateY(50px);
+			}
+		}
+		div span:nth-child(1)
+		{
+			background-color:red;
+			animation-delay:0.5s;
+		}
+		div span:nth-child(2)
+		{
+			background-color:blue;
+			animation-delay:0.3s;
+		}
+		div span:nth-child(3)
+		{
+			background-color:deeppink;
+			animation-delay:0.8s;
+		}
+		div span:nth-child(4)
+		{
+			background-color:gold;
+			animation-delay:0.1s;
+		}
+		.span1
+		{
+			margin-bottom:200px;
+			position:relative;
+			left:570px;
+			top:50px;
+		}
+		span
+		{
+			padding:30px;
+			color:white;
+			margin:50px;
+			display:inline-block;
+			font-size:30px;
+			font-weight:bold;
+			box-shadow:5px -7px 10px white;
+			border-radius:10px;
+			animation:bounce 1s linear 0s infinite;
+		}
+		@keyframes bounce 
+		{
+			0% 100%
+			{
+				transform:translateY(-50px);
+			}
+			50%
+			{
+				transform:translateY(50px);
+			}
+		}
+		div span:nth-child(1)
+		{
+			background-color:purple;
+			animation-delay:0.5s;
+		}
+		.span2
+		{
+			margin-bottom:200px;
+			position:relative;
+			left:300px;
+			top:0px;
+		}
+		span
+		{
+			padding:30px;
+			color:white;
+			margin:50px;
+			display:inline-block;
+			font-size:30px;
+			font-weight:bold;
+			box-shadow:5px -7px 10px white;
+			border-radius:10px;
+			animation:bounce 1s linear 0s infinite;
+		}
+		@keyframes bounce 
+		{
+			0% 100%
+			{
+				transform:translateY(-50px);
+			}
+			50%
+			{
+				transform:translateY(50px);
+			}
+		}
+		div span:nth-child(1)
+		{
+			background-color:red;
+			animation-delay:0.5s;
+		}
+		div span:nth-child(2)
+		{
+			background-color:blue;
+			animation-delay:0.3s;
+		}
+		div span:nth-child(3)
+		{
+			background-color:deeppink;
+			animation-delay:0.8s;
+		}
+		div span:nth-child(4)
+		{
+			background-color:gold;
+			animation-delay:0.1s;
+		}
+		.span3
+		{
+			margin-bottom:200px;
+			position:relative;
+			left:400px;
+			top:-30px;
+		}
+		span
+		{
+			padding:30px;
+			color:white;
+			margin:50px;
+			display:inline-block;
+			font-size:30px;
+			font-weight:bold;
+			box-shadow:5px -7px 10px white;
+			border-radius:10px;
+			animation:bounce 1s linear 0s infinite;
+		}
+		@keyframes bounce 
+		{
+			0% 100%
+			{
+				transform:translateY(-50px);
+			}
+			50%
+			{
+				transform:translateY(50px);
+			}
+		}
+		div span:nth-child(1)
+		{
+			background-color:red;
+			animation-delay:0.5s;
+		}
+		div span:nth-child(2)
+		{
+			background-color:blue;
+			animation-delay:0.3s;
+		}
+		div span:nth-child(3)
+		{
+			background-color:deeppink;
+			animation-delay:0.8s;
+		}
+		 .object1 {
+         animation: MoveRightLeft 10s linear infinite;
+         position: absolute;
+         top:5550px;
+         right:0;
+        }
+
+        @keyframes MoveRightLeft {
+            0%, 100% {
+            left: 0;
+            }
+            50% {
+            left:950px;
+            }
+        }
+        .object {
+         animation: MoveLeftRight 10s linear infinite;
+         position: absolute;
+         top:5550px;
+         right:0;
+        }
+
+        @keyframes MoveLeftRight {
+            0%, 100% {
+            right: 0;
+            }
+            50% {
+            right:950px;
+            }
+        }
+        .scroll
+		{
+            background-image:url("pic.gif");
+        }
+		h1
+		{
+            background-image:url("pic.gif");
+            padding:20px;
+            font-family:"comic sans ms",sans-serif;
+            font-size:30px;
+            animation: bb 10s linear 0s infinite ;
+		}
+		@keyframes bb
+		{
+			0%
+			{
+				transform: translateX(0%);
+			}
+			100%
+			{
+				transform: translateX(100%);
+			}
+		}
+		 .object2 {
+         animation: MoveLeftRight 10s linear infinite;
+         position: absolute;
+         top:6000px;
+         right:0;
+        }
+
+        @keyframes MoveLeftRight {
+            0%, 100% {
+            right: 0;
+            }
+            50% {
+            right:950px;
+            }
+        }
+        .object3 {
+         animation: MoveRightLeft 10s linear infinite;
+         position: absolute;
+         top:6400px;
+         right:0;
+        }
+
+        @keyframes MoveRightLeft {
+            0%, 100% {
+            left: 0;
+            }
+            50% {
+            left:950px;
+            }
+        }
+		
+        
+
+	</style>
+</head>
+<body>
+	<header id="main-header">
+		<h2 class="animate__animated animate__swings ">HAPPY BIRTHDAY ISHI</h2>
+	</header>
+	<!--scroll-->
+	<div class="container mt-5">
+ 		<div id="car" class="carousel slide" data-ride="carousel" data-interval="2000">
+ 			<div class="carousel-inner">
+ 				<div class="carousel-item ">
+ 					<img src="p1.jpeg" class="d-block w-100" alt="---">
+ 					<div class="carousel-caption d-none d-md-block">
+ 						<h2 class="animated swing">HAPPY BIRTHDAY</h2>
+ 						<p class="animated tada delay-1s">MY PRINCESS</p>
+ 					</div>
+ 				</div>
+ 				<div class="carousel-item active">
+ 					<img src="p2.jpeg" class="d-block w-100" alt="---">
+ 					<div class="carousel-caption d-none d-md-block">
+ 						<h2 class="animated swing">I LOVE YOU</h2>
+ 						<p class="animated tada delay-1s">My baby girl, we could never give you a gift as amazing as the one you have been giving us for a year.</p>
+ 					</div>
+ 				</div>
+ 				<div class="carousel-item">
+ 					<img src="p3.jpeg" class="d-block w-100" alt="---">
+ 					<div class="carousel-caption d-none d-md-block">
+ 						<h2 class="animated swing">HAPPY BIRTHDAY</h2>
+ 						<p class="animated tada delay-1s">May every day be special like this one is, to my beautiful baby niece!</p>
+ 					</div>
+ 				</div>
+ 				<div class="carousel-item">
+ 					<img src="p4.jpeg" class="d-block w-100" alt="---">
+ 					<div class="carousel-caption d-none d-md-block">
+ 						<h2 class="animated swing">HAPPY BIRTHDAY</h2>
+ 						<p class="animated tada delay-1s">Have an awesome day today, you may not remember it, but we all will remember how special it is – the first of many to come!</p>
+ 					</div>
+ 				</div>
+ 				<div class="carousel-item">
+ 					<img src="p5.jpeg" class="d-block w-100" alt="---">
+ 					<div class="carousel-caption d-none d-md-block">
+ 						<h2 class="animated swing">HAPPY BIRTHDAY</h2>
+ 						<p class="animated tada delay-1s">Have a rocking day, and enjoy your cake and ice-cream, my beautiful babygirl!</p>
+ 					</div>
+ 				</div>
+ 				<div class="carousel-item">
+ 					<img src="p6.jpeg" class="d-block w-100" alt="---">
+ 					<div class="carousel-caption d-none d-md-block">
+ 						<h2 class="animated swing">HAPPY BIRTHDAY</h2>
+ 						<p class="animated tada delay-1s">Cuddle-coo, sweetie-shoo, pretty-poo – I wish a happy first birthday to you. I just can’t get over how cute you are!</p>
+ 					</div>
+ 				</div>
+ 				<div class="carousel-item">
+ 					<img src="p7.jpeg" class="d-block w-100" alt="---">
+ 					<div class="carousel-caption d-none d-md-block">
+ 						<h2 class="animated swing">HAPPY BIRTHDAY</h2>
+ 						<p class="animated tada delay-1s">Your first birthday is extremely special because you can have your cake with your hands, feet or face! Happy birthday!</p>
+ 					</div>
+ 				</div>
+ 				<div class="carousel-item">
+ 					<img src="p8.jpeg" class="d-block w-100" alt="---">
+ 					<div class="carousel-caption d-none d-md-block">
+ 						<h2 class="animated swing">HAPPY BIRTHDAY</h2>
+ 						<p class="animated tada delay-1s">Let’s party until the last slice of cake is eaten! Happy birthday, baby!</p>
+ 					</div>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</div>
+ 	<div id="ishi"></div>
+ 	<!--pic-->
+ 	<section id="main-section-news">
+		<article class="main-section-news-article">
+			<h2 class="animate__animated animate__tada ">FIRST MONTH</h2>
+			<figure class="zoom">
+				<img src="one.jpg" alt="">
+			</figure>
+			<p1>Your first birthday is extremely special because you can have your cake with your hands, feet or face! Happy birthday!Your first birthday is extremely special because you can have your cake with your hands, feet or face! Happy birthday!</p1>
+			<p1>Your first birthday is extremely special because you can have your cake with your hands, feet or face! Happy birthday!Your first birthday is extremely special because you can have your cake with your hands, feet or face! Happy birthday!</p1>
+			
+		</article>
+		<article class="main-section-news-article">
+			<h2 class="animate__animated animate__flash">SECOND MONTH</h2>
+			<figure class="zoom">
+				<img src="two.jpg" alt="">
+			</figure>
+			<p1>Your first birthday is extremely special because you can have your cake with your hands, feet or face! Happy birthday!Your first birthday is extremely special because you can have your cake with your hands, feet or face! Happy birthday!</p1>
+			<p1>Your first birthday is extremely special because you can have your cake with your hands, feet or face! Happy birthday!Your first birthday is extremely special because you can have your cake with your hands, feet or face! Happy birthday!</p1>
+			
+		</article>
+		<article class="main-section-news-article">
+			<h2 class="animate__animated animate__flash">THIRD MONTH</h2>
+			<figure class="zoom">
+				<img src="three.jpg" alt="">
+			</figure>
+			<p1>Your first birthday is extremely special because you can have your cake with your hands, feet or face! Happy birthday!Your first birthday is extremely special because you can have your cake with your hands, feet or face! Happy birthday!</p1>
+			<p1>Your first birthday is extremely special because you can have your cake with your hands, feet or face! Happy birthday!Your first birthday is extremely special because you can have your cake with your hands, feet or face! Happy birthday!</p1>
+			
+		</article>
+		<article class="main-section-news-article">
+			<h2 class="animate__animated animate__flash">FOURTH MONTH</h2>
+			<figure class="zoom">
+				<img src="ishi10.jpg" alt="">
+			</figure>
+			<p1>Your first birthday is extremely special because you can have your cake with your hands, feet or face! Happy birthday!Your first birthday is extremely special because you can have your cake with your hands, feet or face! Happy birthday!</p1>
+			<p1>Your first birthday is extremely special because you can have your cake with your hands, feet or face! Happy birthday!Your first birthday is extremely special because you can have your cake with your hands, feet or face! Happy birthday!</p1>
+			
+		</article>
+	</section>
+	<div class="object">
+        <img src="b.png" width="400px"height="350px" alt="">
+      </div>
+      <div class="object1">
+        <img src="b1.png" width="400px"height="350px" alt="">
+      </div>
+        <table class="table">
+         <tr>
+        <td class="img"><img src="r.jpg" width="300px" height="250px"></td>
+       
+        <td class="img"><img src="r4.jpg"width="300px" height="250px"></td>
+        <td class="img"><img src="r5.jpg"width="300px" height="250px"></td>
+        <td class="img"><img src="r3.jpg"width="300px" height="250px"></td>
+      </tr>
+      <tr>
+        <td class="img"><img src="r1.jpg"width="300px" height="250px" ></td>
+        <td class="img"><img src="r2.jpg"width="300px" height="250px"></td>
+        <td class="img"><img src="r6.jpg"width="300px" height="250px"></td>
+        <td class="img"><img src="r7.jpg"width="300px" height="250px"></td>
+      </tr>
+  </table>
+  <div class="span">
+		<span>I</span>
+		<span>S</span>
+		<span>H</span>
+		<span>I</span>
+		
+	</div>
+	<div class="span1">
+		<span>I</span>
+	</div>
+	<div class="span2">
+		<span>L</span>
+		<span>O</span>
+		<span>V</span>
+		<span>E</span>
+	</div>
+	<div class="span3">
+		<span>Y</span>
+		<span>O</span>
+		<span>U</span>
+	</div>
+	<!--AUDIO-->
+	 <audio src="song.mp3"controls></audio>
+	 <div id="scroll">
+	 	<tr>
+	    <td><h1>i love you ishi, happy birthday ishi, i love you ishi, happy birthday ishi, i love you ishi,i love you</h1>
+
+	    </td>
+	    
+	    </tr>
+
+     </div>
+
+     <div class="object2">
+        <img src="r7.jpg" width="400px"height="350px" alt="">
+      </div>
+      <div class="object3">
+        <img src="r8.jpg" width="400px"height="350px" alt="">
+      </div>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!--script code-->
+	<script src="mdb/js/jquery.js"></script>
+	<script src="mdb/js/popper.js"></script>
+	<script src="mdb/js/bootstrap.js"></script>
+	<script src="mdb/js/mdb.js"></script>
+
+</body>
+</html>
